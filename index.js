@@ -3,8 +3,8 @@ import { Server } from 'socket.io';
 
 let allCounts = {};
 
-const PORT = 3000;
-const ORIGIN = 'http://localhost:5173'
+const PORT = Number(process.env.PORT);
+const ORIGIN = 'https://tumo-tigran-hovh-client.vercel.app'
 
 const httpServer = createServer();
 
